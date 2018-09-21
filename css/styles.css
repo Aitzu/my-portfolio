@@ -1,0 +1,266 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.full-page {
+    padding-bottom: 2.5em;
+}
+
+
+.topnav {
+    background-color: #FFFFFF;
+    overflow: hidden;
+    width: 100%;
+    padding: 1em;
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.topnav a {
+    float: right;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+    color: #2B2B2B;
+    padding: 5px;
+    font-weight: 700;
+}
+
+.topnav a:hover {
+    color: #EDD861;
+}
+
+.topnav a.active {
+    color: #EDD861;
+}
+
+.home {
+    background-color: #EDD861;
+    height: 99vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home h1, h3 {
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.home h3{
+    font-style: italic;
+}
+
+.home h1 {
+    font-weight: 900;
+}
+ 
+.about {
+    background-color: #FFFFFF;
+    min-height: 95vh;
+    padding-bottom: 2.5em;
+}
+
+.subheader {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 2.5em 1em;
+    /* background: blue; */
+}
+
+.subheader img {
+    flex: 1 1 auto;
+}
+
+.subheader h1 {
+    text-align: center;
+    color: #2B2B2B;
+    font-weight: bold;
+    padding: 0 1em;
+}
+
+@media (max-width: 960px) {
+    .subheader {
+        display: block;
+        text-align: center;
+        padding: 1em;
+        margin: 0;
+        /* background-color: blue; */
+     }
+     .subheader h1 {
+         padding: 0.25em;
+         margin: 0;
+         /* background-color: orange; */
+     }
+     .subheader img {
+         padding: 0;
+         margin: 0;
+     }
+}
+
+.about-main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-around;
+    padding: 1em 0;
+}
+
+.taipei {
+    display: inline-flex;
+    width: 280px;
+    height: 280px;
+    margin: 40px 20px;
+    border: 1px solid black;
+    background-color: grey;
+}
+
+.beijing {
+    display: inline-flex;
+    width: 280px;
+    height: 420px;
+    margin: 40px 20px;
+    border: 1px solid black;
+    background-color: grey;
+
+}
+
+.shanghai {
+    display: inline-flex;
+    width: 280px;
+    height: 420px;
+    margin: 40px 20px;
+    border: 1px solid black;
+    background-color: grey;
+
+}
+
+.melbourne {
+    display: inline-flex;
+    width: 280px;
+    height: 320px;
+    margin: 40px 20px;
+    border: 1px solid black;
+    background-color: grey;
+
+}
+
+.skills {
+    background-color: #4BAAAA;
+}
+
+.skills-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 1em 0;
+}
+
+@media (min-width: 960px) {
+    .skills-main {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+     }
+}
+
+.ruby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+.rails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mongoDB {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.react {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.javascript {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.css {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bootstrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.html5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vuejs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sql {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.github {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.experiences {
+    background-color: #FFFFFF;
+
+}
+
+.experiences-main {
+    display: flex;
+
+}
+
+.experience {
+    display: flex;
+}
+
+.contacts {
+    background-color: #EDD861;
+
+}
+
+.contacts-main {
+
+}
+
+/* I think I don't need icon id */
+
