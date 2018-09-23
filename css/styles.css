@@ -28,6 +28,7 @@ body {
     justify-content: flex-end;
     top: 0;
     right: 0;
+    z-index: 2;
 }
 
 .topnav a {
@@ -108,17 +109,14 @@ body {
         margin: 0;
      }
      .subheader h4 {
-         padding: 0.25em;
+         padding: 2em;
          margin: 0;
      }
      .subheader img {
+         opacity: 0;
          padding: 0;
          margin: 0;
-     }
-
-    .first-line {
-         display: hidden;
-     }
+     } */
 }
 
 .about-main {
