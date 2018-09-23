@@ -7,7 +7,7 @@ body {
     width: device-width;
   }
 
-@media all and (min-width:768px) and (min-height:480px) {
+@media all and (min-width:768px) {
     body {
         margin: 0 40px
     }
