@@ -44,6 +44,12 @@ body {
     color: #EDD861;
 }
 
+.anchor{
+    display: block;
+    height: 35px; /*same height as header*/
+    margin-top: -35px; /*same height as header*/
+    visibility: hidden;
+  }
 .home {
     background-color: #EDD861;
     margin: 0;
