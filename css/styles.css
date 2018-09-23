@@ -77,18 +77,17 @@ body {
     display: flex;
     flex-flow: row nowrap;
     padding: 2.5em 1em;
-    /* background: blue; */
 }
 
 .subheader img {
     flex: 1 1 auto;
 }
 
-.subheader h1 {
+.subheader h4 {
     text-align: center;
     color: #2B2B2B;
     font-weight: bold;
-    padding: 0 1em;
+    padding: 0 2em;
 }
 
 @media (max-width: 960px) {
@@ -97,16 +96,18 @@ body {
         text-align: center;
         padding: 1em;
         margin: 0;
-        /* background-color: blue; */
      }
-     .subheader h1 {
+     .subheader h4 {
          padding: 0.25em;
          margin: 0;
-         /* background-color: orange; */
      }
      .subheader img {
          padding: 0;
          margin: 0;
+     }
+
+    .first-line {
+         display: hidden;
      }
 }
 
@@ -144,10 +145,11 @@ body {
 .beijing p {
     grid-area: 1 / 1 / 5 / 5;
     width: 200px; 
+    z-index: 1;
 }
 
 .beijing img {
-    grid-area: 5 / 3 / 9 / 7 ;
+    grid-area: 6 / 3 / 9 / 7 ;
 }
 
 .shanghai {
@@ -213,31 +215,75 @@ body {
 }
 .experiences {
     background-color: #FFFFFF;
-
 }
 
 .experiences-main {
-    display: flex;
-    flex-flow: column nowrap;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+    justify-items: center;
 }
 
 .experience {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 3fr 3fr;
+    grid-template-rows: 1fr;
+}
+
+@media all and (max-width: 768px) {
+    .experiences-main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        grid-gap: 30px;
+        margin: auto;
+    }
+    
+    .experience {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        max-width: 480px;
+        margin: auto;
+        text-align: center;
+    }
+    .experience_logo {
+        margin: auto;
+    }
+    
+}
+
+@media all and (max-width: 480px) {
+    .experience {
+        max-width: 300px;
+        grid-template-rows: 1fr 1fr 2fr;
+    }
 }
 
 .location_icon {
-    display: inline;
+    float: left;
 }
-/* 
-@media all and (min-width: 720px) {
-    .experience p { flex: 1 auto; }
-  } */
+
+
+/* @media (min-width: 960px) {
+    .experiences-main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        grid-gap: 30px;
+        max-width: 1000px;
+        margin: auto;
+    }
+    .experience {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 2fr 2fr;    */
 
 .contacts {
     background-color: #EDD861;
-
 }
 
 .contacts-main {
@@ -247,17 +293,8 @@ body {
     align-items: center;
 }
 
-.contact {
-  
-    
-}
-
 .contact img {
    
 
 }
-  
-
-}
-
 
