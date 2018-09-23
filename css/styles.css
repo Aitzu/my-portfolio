@@ -1,19 +1,27 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+@media all and (min-width:768px) and (min-height:480px) {
+    body {
+        margin: 0 40px
+    }
 }
 
 .full-page {
     padding-bottom: 2.5em;
 }
 
-
 .topnav {
     background-color: #FFFFFF;
     overflow: hidden;
     width: 100%;
     padding: 1em;
-    display: block;
     position: fixed;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
     top: 0;
     right: 0;
 }
@@ -38,6 +46,7 @@ body {
 
 .home {
     background-color: #EDD861;
+    margin: 0;
     height: 99vh;
     display: flex;
     flex-direction: column;
@@ -107,45 +116,63 @@ body {
     justify-content: space-evenly;
     align-items: center;
     align-content: space-around;
-    padding: 1em 0;
 }
 
 .taipei {
     display: inline-flex;
     width: 280px;
-    height: 280px;
-    margin: 40px 20px;
-    border: 1px solid black;
-    background-color: grey;
+    height: 150px;
+    justify-content: start;
+    align-items: center;
+}
+
+.taipei img {
+    width: 88px;
+    height: 126px;
+    margin-right: 45px;
 }
 
 .beijing {
-    display: inline-flex;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     width: 280px;
-    height: 420px;
+    height: 380px;
     margin: 40px 20px;
-    border: 1px solid black;
-    background-color: grey;
+}
 
+.beijing p {
+    grid-area: 1 / 1 / 5 / 5;
+    width: 200px; 
+}
+
+.beijing img {
+    grid-area: 5 / 3 / 9 / 7 ;
 }
 
 .shanghai {
-    display: inline-flex;
+    display: flex;
+    flex-flow: column nowrap;
     width: 280px;
     height: 420px;
     margin: 40px 20px;
-    border: 1px solid black;
-    background-color: grey;
+}
 
+.shanghai p {
+    width: 280px;
+}
+
+.shanghai img {
+    width: 280px;
 }
 
 .melbourne {
-    display: inline-flex;
+    display: flex;
+    flex-flow: column nowrap;
     width: 280px;
-    height: 320px;
+    height: 360px;
     margin: 40px 20px;
-    border: 1px solid black;
-    background-color: grey;
+    align-items: center;
 
 }
 
@@ -155,9 +182,17 @@ body {
 
 .skills-main {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     padding: 1em 0;
+}
+
+@media (min-width: 720px) {
+    .skills-main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+     }
 }
 
 @media (min-width: 960px) {
@@ -168,76 +203,13 @@ body {
      }
 }
 
-.ruby {
+.skill {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
-}
-.rails {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: auto;
 }
 
-.mongoDB {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.react {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.javascript {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.node {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.css {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.bootstrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.html5 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.vuejs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.sql {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.github {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 .experiences {
     background-color: #FFFFFF;
@@ -246,12 +218,22 @@ body {
 
 .experiences-main {
     display: flex;
-
+    flex-flow: column nowrap;
 }
 
 .experience {
     display: flex;
+    flex-flow: row wrap;
+    align-items: center;
 }
+
+.location_icon {
+    display: inline;
+}
+/* 
+@media all and (min-width: 720px) {
+    .experience p { flex: 1 auto; }
+  } */
 
 .contacts {
     background-color: #EDD861;
@@ -259,8 +241,23 @@ body {
 }
 
 .contacts-main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact {
+  
+    
+}
+
+.contact img {
+   
+
+}
+  
 
 }
 
-/* I think I don't need icon id */
 
